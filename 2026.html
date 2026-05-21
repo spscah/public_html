@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>House Computing 2026</title>
+  <!--
+  ╔══════════════════════════════════════════════════════════════════════╗
+  ║  HIDDEN QUESTION H1  [2 marks]                                       ║
+  ║                                                                      ║
+  ║  Well done for looking at the page source.                           ║
+  ║                                                                      ║
+  ║  What is the surname of the mathematician widely regarded as the     ║
+  ║  father of computer science, who worked at Bletchley Park during     ║
+  ║  the Second World War?                                               ║
+  ║                                                                      ║
+  ║  His surname, in upper case letters, is answer to H1. You can also   ║
+  ║  unlock another answer with it.                                      ║
+  ╚══════════════════════════════════════════════════════════════════════╝
+  -->
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:      #f8f8f0;
+      --surface: #ffffff;
+      --accent:  #1a3a6b;
+      --gold:    #c8870a;
+      --muted:   #777;
+      --border:  #d4d4c8;
+    }
+
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      background: var(--bg);
+      color: #1c1c1c;
+      max-width: 840px;
+      margin: 0 auto;
+      padding: 52px 36px 80px;
+      line-height: 1.75;
+    }
+
+    h1 { font-size: 2.1em; color: var(--accent); border-bottom: 2px solid var(--accent); padding-bottom: 0.25em; margin-bottom: 0.2em; }
+    .subtitle { font-size: 0.9em; color: var(--muted); margin-bottom: 1.6em; }
+
+    .intro {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 1em 1.4em;
+      font-size: 0.95em;
+      margin-bottom: 2.4em;
+    }
+
+    /* ── Visible questions ── */
+    .question {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 5px solid var(--accent);
+      border-radius: 0 8px 8px 0;
+      padding: 1.3em 1.5em 1.2em;
+      margin-bottom: 1.8em;
+    }
+
+    .q-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 0.7em;
+    }
+
+    .q-num  { font-weight: bold; color: var(--accent); font-size: 1.05em; }
+    .marks  { font-family: 'Courier New', monospace; font-size: 0.82em; background: #eef2f8; color: var(--accent); padding: 2px 9px; border-radius: 20px; }
+
+    .q-body p + p { margin-top: 0.6em; }
+
+    code {
+      font-family: 'Courier New', monospace;
+      background: #f0f0e8;
+      padding: 1px 5px;
+      border-radius: 3px;
+      font-size: 0.88em;
+    }
+
+    /* ── Bonus section (hidden until unlock() called) ── */
+    #bonus {
+      display: none;
+      background: #fff9eb;
+      border: 2px solid var(--gold);
+      border-radius: 8px;
+      padding: 1.3em 1.5em 1.2em;
+      margin-bottom: 1.8em;
+    }
+    #bonus .q-num  { color: #7a5400; }
+    #bonus .marks  { background: #fdecc0; color: #7a5400; }
+
+    /* ── Ghost text (white on white — select to reveal) ── */
+    .ghost {
+      color: var(--bg);
+      background: var(--bg);
+      font-size: 0.75em;
+      line-height: 1.4;
+      user-select: text;
+    }
+    /* ── Konami popup ── */
+    #k-overlay {
+      display: none; position: fixed; inset: 0;
+      background: rgba(0,0,0,0.5); z-index: 900;
+    }
+    #k-box {
+      display: none; position: fixed; top: 50%; left: 50%;
+      transform: translate(-50%,-50%); z-index: 1000;
+      background: var(--surface); border: 3px solid #c0392b;
+      border-radius: 10px; padding: 2em 2.2em;
+      max-width: 520px; width: 90%;
+      box-shadow: 0 12px 48px rgba(0,0,0,0.25);
+    }
+    #k-box h2 { color: #c0392b; margin-bottom: 0.5em; font-size: 1.25em; }
+    #k-box .marks { background: #fce8e8; color: #c0392b; }
+    #k-close {
+      margin-top: 1.2em; padding: 6px 18px;
+      background: #c0392b; color: white; border: none;
+      border-radius: 4px; cursor: pointer; font-family: Georgia, serif; font-size: 0.9em;
+    }
+
+    footer { margin-top: 3em; padding-top: 1em; border-top: 1px solid var(--border); font-size: 0.78em; color: var(--muted); text-align: center; }
+  </style>
+</head>
+<body>
+
+<h1>House Computing 2026</h1>
+<p class="subtitle">Answer as many questions as possible.</p>
+
+<div class="intro">
+  <p>
+    The number of marks for each question is shown on the right.
+    Answer questions in any order.
+  </p>
+  <p style="margin-top:0.7em">
+    For questions 1–5: show your answer to a referee, who will give you a code word to
+    enter in the Google Form. For hidden questions: follow the instructions you find.
+  </p>
+  <p style="margin-top:0.7em">
+    The first team to answer all questions correctly wins; otherwise the highest score
+    after 30 minutes wins.
+  </p>
+</div>
+
+<!-- ── Q1 ── -->
+<div class="question">
+  <div class="q-head">
+    <span class="q-num">Question 1</span>
+    <span class="marks">[2 marks]</span>
+  </div>
+  <div class="q-body">
+    <p>
+      The world's first webcam was pointed not at a person or a street, but at a specific object. 
+    </p>
+    <p>
+      At which university was it set up, and in what year was its image first made available on the internet?
+    </p>
+  </div>
+</div>
+
+<!-- ── Q2 ── -->
+<div class="question">
+  <div class="q-head">
+    <span class="q-num">Question 2</span>
+    <span class="marks">[2 marks]</span>
+  </div>
+  <div class="q-body">
+    <p>
+      The Collatz sequence starts with any positive integer. At each step: if the number
+      is even, divide it by 2; if it is odd, multiply by 3 and add 1. Repeat until you reach 1.
+    </p>
+    <p>
+      Write a program to find which starting number below 1,000 produces the longest
+      Collatz sequence. What is that number, and how many steps does it take to reach 1?
+    </p>
+  </div>
+</div>
+
+<!-- ── Q3 ── -->
+<div class="question">
+  <div class="q-head">
+    <span class="q-num">Question 3</span>
+    <span class="marks">[2 marks]</span>
+  </div>
+  <div class="q-body">
+    <p>Write a program that accepts a positive integer (under a million) and outputs it in human readable form.</p>
+    <p>Test it with: <code>2026</code>, <code>1999</code>, <code>42</code> and <code>187,187</code>.</p>
+  </div>
+</div>
+
+<!-- ── Q4 ── -->
+<div class="question">
+  <div class="q-head">
+    <span class="q-num">Question 4</span>
+    <span class="marks">[2 marks]</span>
+  </div>
+  <div class="q-body">
+    <p>
+      Write a program that draws an analogue clock face showing the current time,
+      with all three hands (hours, minutes, seconds) updating once per second.
+    </p>
+  </div>
+</div>
+
+<!-- ── Q5 ── -->
+<div class="question">
+  <div class="q-head">
+    <span class="q-num">Question 5</span>
+    <span class="marks">[2 marks]</span>
+  </div>
+  <div class="q-body">
+    <p>
+      Use an AI image generator to produce an image matching the following description
+      as closely as possible. Show the result to a referee — marks are awarded for accuracy.
+    </p>
+    <p style="margin-top:0.7em; font-style:italic;">
+      "A Victorian gentleman in a top hat, solemnly debugging a steam-powered computer
+      while a confused penguin looks on."
+    </p>
+  </div>
+</div>
+
+<!-- ── Q6 ── -->
+<div class="question">
+  <div class="q-head">
+    <span class="q-num">Question 6</span>
+    <span class="marks">[2 marks]</span>
+  </div>
+  <div class="q-body">
+    <p>
+      Write a program that reads a plain-text file and outputs, in descending order of frequency,
+      the 12 most commonly occurring words. Punctuation and capitalisation should be actively ignored (i.e. delete not replaced with spaces), but apostrophes and hyphens count as a letter.
+    </p>
+    <p style="margin-top:0.6em">
+      Download <a href="https://www.gutenberg.org/cache/epub/77600/pg77600.txt" target="_blank">this version of The Maltese Falcon</a> and run your program on it.
+    </p>
+  </div>
+</div>
+
+<div id="bonus"></div>
+
+<!-- Ghost text: white on white background. Select all to reveal. -->
+<p class="ghost"></p>
+
+<!-- Answer box for ghost question — shown by JS when selection is detected -->
+
+<p class="subtitle" style="margin-top: 1.8em; text-align: center;"
+   data-ref="VFVSSU5H"
+   title="House Computing 2026">
+  Good luck. May the best team win.
+</p>
+
+<!--
+  Nothing else to see here. Move along.
+
+  Unless there is. 
+
+  Konami Code popup -->
+<div id="k-overlay"></div>
+<div id="k-box"></div>
+
+<footer>House Computing Competition 2026</footer>
+
+<script>eval(atob("LyoKICogPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQogKiBISURERU4gUVVFU1RJT04gSDYgIFsyIG1hcmtzXQogKgogKiBXZWxsIGRvbmUgLS0geW91IGRlY29kZWQgdGhpcyBibG9iLgogKiBZb3UgdXNlZCBhdG9iKCkgdG8gcmV2ZWFsIHRoaXMsIHdoaWNoIGlzIGV4YWN0bHkgdGhlIHJpZ2h0CiAqIGluc3RpbmN0LiBTbzogd2hhdCBkb2VzICdhdG9iJyBzdGFuZCBmb3I/CiAqCiAqIEVudGVyIHRoZSBjb2RlIHdvcmQgSDYgaW4gdGhlIEdvb2dsZSBGb3JtOiBERUNPREUKICogPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQogKi8KCmNvbnNvbGUubG9nKCclY0hvdXNlIENvbXB1dGluZyAyMDI2JywgJ2JhY2tncm91bmQ6IzFhM2E2Yjtjb2xvcjojZmZmO2ZvbnQtc2l6ZToxNXB4O3BhZGRpbmc6NHB4IDEycHg7Ym9yZGVyLXJhZGl1czo0cHg7Jyk7CmNvbnNvbGUubG9nKCcnKTsKY29uc29sZS5sb2coJyVjV2VsbCBkb25lIGZvciBvcGVuaW5nIHRoZSBkZXZlbG9wZXIgY29uc29sZS4nLCAnY29sb3I6IzFhM2E2Yjtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxM3B4Jyk7CmNvbnNvbGUubG9nKCcnKTsKY29uc29sZS5sb2coJystLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tKycpOwpjb25zb2xlLmxvZygnfCAgSElEREVOIFFVRVNUSU9OIEgyICBbMiBtYXJrc10gICAgICAgICAgICAgICAgICAgICB8Jyk7CmNvbnNvbGUubG9nKCd8ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHwnKTsKY29uc29sZS5sb2coJ3wgIFlvdSBmb3VuZCB0aGlzIC0tIHRoYXQgaXMgZW5vdWdoLiAgICAgICAgICAgICAgICAgfCcpOwpjb25zb2xlLmxvZygnfCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB8Jyk7CmNvbnNvbGUubG9nKCd8ICBFbnRlciB0aGUgY29kZSB3b3JkIGZvciBIMiBpbiB0aGUgR29vZ2xlIEZvcm06ICAgfCcpOwpjb25zb2xlLmxvZygnfCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB8Jyk7CmNvbnNvbGUubG9nKCd8ICAgICAgICAgICAgICAgICAgIFRFTEVUWVBFICAgICAgICAgICAgICAgICAgICAgICAgIHwnKTsKY29uc29sZS5sb2coJ3wgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfCcpOwpjb25zb2xlLmxvZygnKy0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0rJyk7CmNvbnNvbGUubG9nKCcnKTsKY29uc29sZS5sb2coJ0hpbnQ6IHRoZXJlIGlzIHNvbWV0aGluZyBlbmNvZGVkIGVsc2V3aGVyZSBvbiB0aGlzIHBhZ2UuJyk7CmNvbnNvbGUubG9nKCcnKTsKY29uc29sZS5sb2coJ1RoaXMgY29uc29sZSBjYW4gYWxzbyBiZSB1c2VkIHRvIHVubG9jayBzb21ldGhpbmcgZnVydGhlci4gQ2FuIHlvdSB3b3JrIG91dCBob3c/Jyk7Cgpjb25zdCBIMyA9ICdTRWxFUkVWT0lGRlZSVk5VU1U5T0lFZ3pJRnN5SUcxaGNtdHpYVG9nVjJoaGRDQnliMjl0SUdGeVpTQjNaU0JwYmo4Z1ZIbHdaU0IwYUdVZ015QmthV2RwZEhNZ2FXNTBieUJIYjI5bmJHVWdSbTl5YlM0PSc7CmRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoJy5naG9zdCcpLnRleHRDb250ZW50ID0gYXRvYihIMyk7Cgpjb25zdCBCT05VUyA9ICdQR1JwZGlCamJHRnpjejBpY1Mxb1pXRmtJajQ4YzNCaGJpQmpiR0Z6Y3owaWNTMXVkVzBpUGtocFpHUmxiaUJSZFdWemRHbHZiaUJJTlR3dmMzQmhiajQ4YzNCaGJpQmpiR0Z6Y3owaWJXRnlhM01pUGxzeUlHMWhjbXR6WFR3dmMzQmhiajQ4TDJScGRqNDhjRDVaYjNVZ2RXNXNiMk5yWldRZ2RHaHBjeUJ6WldOMGFXOXVMaUJVYUdVZ1kyOWtaU0IzYjNKa0lHWnZjaUJJTlNCcGN6bzhMM0ErUEhBZ2MzUjViR1U5SW0xaGNtZHBiaTEwYjNBNk1DNDFaVzA3Wm05dWRDMXphWHBsT2pKbGJUdG1iMjUwTFhkbGFXZG9kRHBpYjJ4a08yeGxkSFJsY2kxemNHRmphVzVuT2pBdU1USmxiVHRqYjJ4dmNqb2pOMkUxTkRBd08zUmxlSFF0WVd4cFoyNDZZMlZ1ZEdWeU95SStRa3hGVkVOSVRFVlpQQzl3UGp4d0lITjBlV3hsUFNKdFlYSm5hVzR0ZEc5d09qQXVObVZ0TzJadmJuUXRjMmw2WlRvd0xqZzRaVzA3WTI5c2IzSTZJemMzTnpzaVBrVnVkR1Z5SUdsMElHbHVJR05oY0dsMFlXeHpJR0Z6SUhsdmRYSWdTRFVnWVc1emQyVnlJR2x1SUhSb1pTQkhiMjluYkdVZ1JtOXliUzQ4TDNBKyc7CgpmdW5jdGlvbiB1bmxvY2socGFzc3dvcmQpIHsKICBjb25zdCBrZXkgPSBhdG9iKGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoJ1tkYXRhLXJlZl0nKS5kYXRhc2V0LnJlZik7CiAgaWYgKHBhc3N3b3JkLnRvVXBwZXJDYXNlKCkgPT09IGtleSkgewogICAgY29uc3QgZWwgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnYm9udXMnKTsKICAgIGVsLmlubmVySFRNTCA9IGF0b2IoQk9OVVMpOwogICAgZWwuc3R5bGUuZGlzcGxheSA9ICdibG9jayc7CiAgICBlbC5zY3JvbGxJbnRvVmlldyh7IGJlaGF2aW9yOiAnc21vb3RoJyB9KTsKICAgIGNvbnNvbGUubG9nKCclY0JvbnVzIHF1ZXN0aW9uIHVubG9ja2VkISBTY3JvbGwgdXAgdG8gc2VlIGl0LicsICdjb2xvcjojMjdhZTYwO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEzcHgnKTsKICB9IGVsc2UgewogICAgY29uc29sZS5sb2coJyVjSW5jb3JyZWN0IHBhc3N3b3JkLiBLZWVwIGxvb2tpbmcuLi4nLCAnY29sb3I6I2MwMzkyYjtmb250LXN0eWxlOml0YWxpYycpOwogIH0KfQoKZG9jdW1lbnQuYWRkRXZlbnRMaXN0ZW5lcignc2VsZWN0aW9uY2hhbmdlJywgKCkgPT4gewogIGlmICh3aW5kb3cuZ2V0U2VsZWN0aW9uKCkudG9TdHJpbmcoKS5pbmNsdWRlcygnSDMnKSkgewogICAgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ2dob3N0LWFucycpLnN0eWxlLmRpc3BsYXkgPSAnYmxvY2snOwogIH0KfSk7Cgpjb25zdCBLT05BTUkgPSBbJ0Fycm93VXAnLCdBcnJvd1VwJywnQXJyb3dEb3duJywnQXJyb3dEb3duJywnQXJyb3dMZWZ0JywnQXJyb3dSaWdodCcsJ0Fycm93TGVmdCcsJ0Fycm93UmlnaHQnLCdiJywnYSddOwpjb25zdCBLQk9YICAgPSAnUEdneVBsTkZRMUpGVkNCVlRreFBRMHRGUkNBbWJtSnpjRHM4YzNCaGJpQmpiR0Z6Y3owaWJXRnlhM01pUGxzeUlHMWhjbXR6WFR3dmMzQmhiajQ4TDJneVBqeHdJSE4wZVd4bFBTSnRZWEpuYVc0dGRHOXdPakF1Tm1WdElqNDhjM1J5YjI1blBraEpSRVJGVGlCUlZVVlRWRWxQVGlCSU5Ed3ZjM1J5YjI1blBqd3ZjRDQ4Y0NCemRIbHNaVDBpYldGeVoybHVMWFJ2Y0Rvd0xqWmxiU0krV1c5MUlHVnVkR1Z5WldRZ2RHaGxJR052Y25KbFkzUWdjMlZ4ZFdWdVkyVXVJRlJvWlNCamIyUmxJSGR2Y21RZ2FYTTZQQzl3UGp4d0lITjBlV3hsUFNKdFlYSm5hVzR0ZEc5d09qQXVOV1Z0TzJadmJuUXRjMmw2WlRveVpXMDdabTl1ZEMxM1pXbG5hSFE2WW05c1pEdHNaWFIwWlhJdGMzQmhZMmx1Wnpvd0xqRXlaVzA3WTI5c2IzSTZJekZoTTJFMllqdDBaWGgwTFdGc2FXZHVPbU5sYm5SbGNqc2lQa2RTUVVSSlZWTThMM0ErUEhBZ2MzUjViR1U5SW0xaGNtZHBiaTEwYjNBNk1DNDNaVzA3Wm05dWRDMXphWHBsT2pBdU9EaGxiVHRqYjJ4dmNqb2pOVFUxT3lJK1FXUmtJSFJvWlNCamIyUmxJSGR2Y21RZ2FXNGdZMkZ3YVhSaGJITWdZWE1nZVc5MWNpQklOQ0JoYm5OM1pYSWdhVzRnZEdobElFZHZiMmRzWlNCR2IzSnRMand2Y0Q0OFluVjBkRzl1SUdsa1BTSnJMV05zYjNObElqNURiRzl6WlR3dlluVjBkRzl1UGc9PSc7CmxldCBraSA9IDA7CgpmdW5jdGlvbiBjbG9zZUtvbmFtaSgpIHsKICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnay1vdmVybGF5Jykuc3R5bGUuZGlzcGxheSA9ICdub25lJzsKICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnay1ib3gnKS5zdHlsZS5kaXNwbGF5ICAgICA9ICdub25lJzsKfQoKZG9jdW1lbnQuYWRkRXZlbnRMaXN0ZW5lcigna2V5ZG93bicsIGUgPT4gewogIGtpID0gKGUua2V5ID09PSBLT05BTUlba2ldKSA/IGtpICsgMSA6IChlLmtleSA9PT0gS09OQU1JWzBdID8gMSA6IDApOwogIGlmIChraSA9PT0gS09OQU1JLmxlbmd0aCkgewogICAga2kgPSAwOwogICAgY29uc3QgYm94ID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ2stYm94Jyk7CiAgICBib3guaW5uZXJIVE1MID0gYXRvYihLQk9YKTsKICAgIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdrLW92ZXJsYXknKS5zdHlsZS5kaXNwbGF5ID0gJ2Jsb2NrJzsKICAgIGJveC5zdHlsZS5kaXNwbGF5ID0gJ2Jsb2NrJzsKICAgIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdrLWNsb3NlJykuYWRkRXZlbnRMaXN0ZW5lcignY2xpY2snLCBjbG9zZUtvbmFtaSk7CiAgfQp9KTsKCmRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdrLW92ZXJsYXknKS5hZGRFdmVudExpc3RlbmVyKCdjbGljaycsIGNsb3NlS29uYW1pKTsK"));</script>
+
+</body>
+</html>
